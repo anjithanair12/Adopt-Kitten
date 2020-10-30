@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Adopt a Kitten</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Adopt a Free Kitten Now!">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/css.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head><body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="img/catbackground.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <span class="w3-xxlarge">🏠</span>
+    <p><span class="english">HOME</span><span class="malayalam">പ്രധാന പേജ്</span></p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <span class="w3-xxlarge">🐈</span>
+    <p><span class="english">ABOUT</span><span class="malayalam">എന്നെ പറ്റി</span></p>
+  </a>
+  <a href="#litter" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <span class="w3-xxlarge">🐱</span>
+    <p><span class="english">MY LITTER</span><span class="malayalam">എന്റെ പൂച്ചക്കുട്ടികൾ</span></p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <span class=" w3-xxlarge">📞</span>
+    <p><span class="english">CONTACT</span><span class="malayalam">ഇവിടെ ബന്ധപ്പെടുക</span></p>
+  </a>
+  <a onclick="SwitchLang('')" class="w3-bar-item w3-small w3-button w3-padding w3-hover-black">
+    <p><span class="english">🇮🇳 Language</span><span class="malayalam">🇬🇧 ഭാഷ</span></p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium w3-row" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button w3-quarter"><span class="english">HOME</span><span class="malayalam">പ്രധാന<br> പേജ്</span></a>
+    <a href="#about" class="w3-bar-item w3-button w3-quarter"><span class="english">ABOUT</span><span class="malayalam w3-small">എന്നെ<br> പറ്റി</span></a>
+    <a href="#litter" class="w3-bar-item w3-button w3-quarter"><span class="english">MY LITTER</span><span class="malayalam">എന്റെ<br> പൂച്ചക്കുട്ടികൾ</span></a>
+    <a href="#contact" class="w3-bar-item w3-button w3-quarter"><span class="english">CONTACT</span><span class="malayalam">ഇവിടെ <br>ബന്ധപ്പെടുക</span></a>
+    <a onclick="SwitchLang('')" class="w3-bar-item w3-button w3-quarter"><span class="english">LANG</span><span class="malayalam">ഭാഷ <br> English</span></a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo english">I'm Chessa <span class="w3-large"><span class="w3-hide-small"><br></span>And I need your Help! </span></h1>
+    <h1 class="w3-jumbo malayalam"><span class="w3-hide-small">ഞാൻ </span> ചെസ്സയാണ് <span class="w3-large">എനിക്ക് നിങ്ങളുടെ സഹായം ആവശ്യമാണ് ! </span></h1>
+    
+    <p class="english">A Native Feline Mom with 3 Kitties.</p>
+    <p class="malayalam">3 പൂച്ചക്കുട്ടികളുള്ള ഒരു പ്രാദേശിക പൂച്ച അമ്മ</p>
+    <img src="img/catbackground.jpg" alt="kitty" class="w3-image" width="992" height="1108">
+    <p class="w3-small w3-center w3-hover-paleblue w3-button" onclick="SwitchLang(this)">[Switch Language] മലയാളത്തിലേക്ക് മാറുക</p>
+  </header>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey"><span class="english">About Me</span><span class="malayalam">എന്നെ പറ്റി</span></h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="english">
+I Need Your Help, My 3 Kitties need a Home.<br>
+They're just, 3 weeks and 15 days old and I'm not able to sustain them for long.<br>
+Please adopt my Kittens, they're cute and Playful (when they're not asleep).
+
+    </p>
+    <p class="malayalam">
+എനിക്ക് നിങ്ങളുടെ സഹായം ആവശ്യമാണ്, എന്റെ 3 പൂച്ചക്കുട്ടികൾക്ക് ഒരു വീട് ആവശ്യമാണ്.<br>
+അവർ വെറും 3 ആഴ്ചയും 15 ദിവസവും പ്രായമുള്ളവരാണ്, എനിക്ക് അവരെ കൂടുതൽ നേരം നിലനിർത്താൻ കഴിയില്ല.<br>
+ദയവായി എന്റെ പൂച്ചക്കുട്ടികളെ സ്വീകരിക്കുക, അവർ മനോഹരവും കളിയുമാണ് (അവർ ഉറങ്ങാത്തപ്പോൾ).
+    </p>
+
+    <h3 class="w3-text-yellow english"> <a href="#contact" class="w3-button w3-hover-text-blue w3-hover-black w3-center"> You can Have them for<br> <span class="w3-wide">FREE !</span> </a></h3>
+    <h3 class="w3-text-yellow malayalam"> <a href="#contact" class="w3-button w3-hover-text-blue w3-hover-black"> നിങ്ങൾക്ക് അവയെല്ലാം<br> സ .ജന്യമായി ലഭിക്കും</a></h3>
+
+    
+    </div>
+<!-- About Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="litter">
+    <h2 class="w3-text-light-grey" ><span class="english">My Litter</span><span class="malayalam">എന്റെ പൂച്ചക്കുട്ടികൾ</span></h2>
+    <hr style="width:120px" class="w3-opacity">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-padding w3-white">
+          <img src="img/cat1.jpg" class="w3-image" alt="Kitten Alpha">
+          <h4 class="w3-center  w3-green">This is Alpha</h4>
+        </div>
+        
+      </div>
+
+      <div class="w3-third  w3-margin-bottom">
+        <div class="w3-card w3-padding w3-white">
+          <img src="img/cat1.jpg" class="w3-image" alt="Kitten Alpha">
+          <h4 class="w3-center w3-pink">This is Beta</h4>
+        </div>
+        
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-padding w3-white">
+          <img src="img/cat1.jpg" class="w3-image" alt="Kitten Alpha">
+          <h4 class="w3-center w3-blue">This is Gamma</h4>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact My Family</h2>
+    <hr style="width:260px" class="w3-opacity">
+
+    <div class="w3-section w3-third">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Chitilapally, Thrissur, Kerala</p>
+      <p><a href="tel:+91123456789"  class="w3-button w3-block w3-light-blue "> <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right w3-left"></i> Phone: +91 123456789</a></p>
+      <p><a href="tel:+91123456789" class="w3-button w3-block w3-light-blue "><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right w3-left"> </i> Alt Phone: +91 123456789</a></p>
+    </div><br>
+  </div>
+  
+  <footer class="w3-content w3-row w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-text-green">w3.css</a> with lots of Love <span class="w3-text-red"><i class="fa fa-heart fa-fw"></i> Elvis and Ash</span></a></p>
+    <p class="w3-small">Favicon from Flaticon</p>
+  </footer>
+
+</div>
+
+<script>
+  Engs = document.getElementsByClassName('english');
+  Mals = document.getElementsByClassName('malayalam');
+
+  //Default only Eng, so hide Malayalam
+  for (const mal of Mals) {
+        mal.style.display='none';
+  }
+
+  var lang="english";
+
+  function SwitchLang(ele){
+    
+    if (lang=='english'){
+      for (const eng of Engs) {
+        eng.style.display='none';
+      }
+      for (const mal of Mals) {
+        mal.style.display='block';
+      }
+      ele.innerText="[Switch Language] to English";
+      lang="malayalam"
+    }else{
+      for (const mal of Mals) {
+        mal.style.display='none';
+      }
+      for (const eng of Engs) {
+        eng.style.display='block';
+      }
+      ele.innerText="[Switch Language] മലയാളത്തിലേക്ക് മാറുക ";
+      lang="english";
+    }
+  }
+</script>
+
+</body></html>
